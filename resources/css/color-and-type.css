@@ -1,0 +1,177 @@
+/* classes */
+
+.terms {
+    padding: 2em 10em 2em 10em;
+}
+
+.list {
+    padding: 2em 7em 3em 7em;
+}
+
+.article {
+    padding: 2em;
+}
+
+.screenshot {
+    width: 1000px;
+    height: auto;
+}
+
+.sidebyside {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* table styling for the color palettes */
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 2em;
+    padding: 1em;
+}
+
+main div.list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#themeTitle {
+    padding: 2em 0 0 2em;
+}
+
+caption {
+    font-style: italic;
+    padding: 1em;
+}
+
+thead {
+    background-color: white;
+}
+
+/* color theme one palette */
+
+#tealGrey {
+    background-color: #88BAC8;
+    color: white;
+}
+
+#teal {
+    background-color: #4D869B;
+    color: white;
+}
+
+#emerald {
+    background-color: #336063;
+    color: white;
+}
+
+#indigo {
+    background-color: #333A57;
+    color: white;
+}
+
+#plum {
+    background-color: #422C47;
+    color: white;
+}
+
+/* color theme two palette */
+
+#vividPurple {
+    background-color: #6160AD;
+    color: white;
+}
+
+#lavenderGrey {
+    background-color: #B6A2CB;
+}
+
+#palePeach {
+    background-color: #F9C3B5;
+}
+
+#magenta {
+    background-color: #994E8C;
+}
+
+#vividPeach {
+    background-color: #DE8B85;
+}
+
+/* color theme three palette */
+
+#sage {
+    background-color: #96ACA0;
+}
+
+#eucalyptus {
+    background-color: #7D9094;
+}
+
+#ballet {
+    background-color: #F9C8C2;
+}
+
+#rose {
+    background-color: #C69491;
+}
+
+#olive {
+    background-color: #60665A;
+    color: white;
+}
+
+/* color theme four palette */
+
+#navy {
+    background-color: #102B53;
+    color: white;
+}
+
+#storm {
+    background-color: #50698D;
+    color: white;
+}
+
+#calm {
+    background-color: #4E7AB1;
+    color: white;
+}
+
+#lilacMoon {
+    background-color: #CEB5D4;
+    color: white;
+}
+
+#eyeOfTheStorm {
+    background-color: #7D9FC0;
+    color: white;
+}
+
+/* color theme five palette */
+
+#chocolate {
+    background-color: #9B7D61;
+    color: white;
+}
+
+#coffee {
+    background-color: #E9D7C0;
+}
+
+#sherbert {
+    background-color: #DAA38F;
+}
+
+#pistachio {
+    background-color: #92ADA4;
+}
+
+#vanilla {
+    background-color: #FED8A6;
+}

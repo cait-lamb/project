@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="resources/css/sitewide.css" rel="stylesheet">
+        <link href="resources/css/showcase.css" rel="stylesheet">
         <title>Photoshop Branding</title>
     </head>
     <body>
@@ -16,16 +18,14 @@
             <li><a href="photoshop-restoration.html">Restoration</a></li>
             <li><a href="photoshop-ads.html">Social Media Ads</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li>Color Theory
+            <li><a href="color-theory-overview.html">Color Theory Overview</a>
                 <ul>
-                    <li><a href="color-theory-overview.html">Color Theory Overview</a></li>
                     <li><a href="color-themes.html">Color Themes</a></li>
                     <li><a href="color-theory-article.html">Color Theory Article</a></li>
                 </ul>
             </li>
-            <li>Typography
+            <li><a href="typography-overview.html">Typography Overview</a>
                 <ul>
-                    <li><a href="typography-overview.html">Typography Overview</a></li>
                     <li><a href="font-types-article.html">Font Types Article</a></li>
                     <li><a href="typography-article.html">Typography Article</a></li>
                 </ul>
@@ -38,28 +38,19 @@
         <p>The goal of this project was to create a branding package for a company, real or imagined. I went imagined.</p>
         <p>The name of the fictional company is what inspired the dominance of lavender within the logo, business card, and social media banner. Additionally, I chose an image that appeared to be taken during the golden hour in the evening for subliminal sunset thoughts.</p>
         <p>To keep the images in a size more reasonable for viewing on a computer, I changed the height and width within the img element, though it is not best practice. This was to prevent horizoontal scrolling or excessive vertical scrolling needed to see all components together.</p>
-        <table>
-            <tbody>
-                <tr>
-                    <th><img src="resources/images/photoshop/floral-logo.png" width="300px" height="300px" alt="lavender sunset's logo consisting of an 'ls' in thick, white text sitting on top of a circle of a lavender field background"></th>
-                    <th><img src="resources/images/photoshop/solid-logo.png" width="300px" height="300px" alt="lavender sunset's logo with thick white text on a solid bright lavender circle"></th>
-                </tr>
-                <tr>
-                    <th><img src="resources/images/photoshop/business-card-front.jpg" width="541px" height="316px" alt="the front of jane doe's business card"></th>
-                    <th><img src="resources/images/photoshop/business-card-back.jpg" width="541px" height="316px" alt="the back of jane doe's business card"></th>
-                </tr>
-                <tr>
-                    <th colspan="2"><img src="resources/images/photoshop/social-media-banner.jpg" width="820px" height="360px" alt="a wide image for a social media banner consisting of the same lavender field with an overlay of bright lavender to the left, a speckling of a deeper purple to the far left edge and the 'ls' of the logo in the bottom right corner"></th>
-                </tr>
-            </tbody>
-        </table>
+        <div class="branding">
+            <img src="resources/images/photoshop/floral-logo.png" id="floralLogo" alt="lavender sunset's logo consisting of an 'ls' in thick, white text sitting on top of a circle of a lavender field background">
+            <img src="resources/images/photoshop/solid-logo.png" id="solidLogo" alt="lavender sunset's logo with thick white text on a solid bright lavender circle">
+            <img src="resources/images/photoshop/business-card-front.jpg" id="frontBC" alt="the front of jane doe's business card">
+            <img src="resources/images/photoshop/business-card-back.jpg" id="backBC" alt="the back of jane doe's business card">
+            <img src="resources/images/photoshop/social-media-banner.jpg" id="bannerSM" alt="a wide image for a social media banner consisting of the same lavender field with an overlay of bright lavender to the left, a speckling of a deeper purple to the far left edge and the 'ls' of the logo in the bottom right corner">
+        </div>
     </main>
     <footer>
-        <p><a href="animate.html">Animate</a></p>
-        <p><a href="photoshop-branding.html">Branding - Photoshop Project</a></p>
-        <p><a href="photoshop-restoration.html">Restoration - Photoshop Project</a></p>
-        <p><a href="photoshop-ads.html">Social Media Ads - Photoshop Project</a></p>
-        <p><a href="resume.html">Resume</a></p>
+        <p><strong>Jane Doe.</strong> Here for the grade.</p>
+        <address>
+            <a href="mailto:souljaboytellem@email.com">souljaboytellem@email.com</a>
+        </address>
     </footer>
     </body>
 </html>

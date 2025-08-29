@@ -1,0 +1,131 @@
+/* animate section */
+
+main div iframe {
+    display: block;
+}
+
+#airplaneBanner {
+    border-style: none;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+    width: 600px;
+    height: 300px;
+}
+
+#interactiveBanner {
+    border-style: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+}
+
+#infographic {
+    border-style: none;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+    width: 800px;
+    height: 1600px;
+}
+
+/* photoshop branding section */
+
+main div.branding {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    margin: auto;
+    padding: 2em;
+}
+
+#floralLogo {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#solidLogo {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#frontBC {
+    margin: 0 auto;
+    width: 541px;
+    height: 316px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#backBC {
+    margin: 0 auto;
+    width: 541px;
+    height: 316px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#bannerSM {
+    margin: 0 auto;
+    width: 820px;
+    height: 360px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+/* photoshop restoration section */
+
+main div.restoration {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    margin: 0;
+    padding: 0 2em 0 2em;
+}
+
+.restored {
+    flex: 1;
+    margin: 0 auto;
+}
+
+#originalPhoto {
+    padding: 0 0 0 5em;
+    width: 433.5px;
+    height: 654.5px;
+}
+
+#healedPhoto {
+    width: 433.5px;
+    height: 654.5px;
+}
+
+/* photoshop social media ads section */
+
+main div.ads {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#quadAd {
+    width: max-content;
+}
+
+#rocket,
+#onDemand {
+    width: 1280px;
+    height: 533.3px;
+}
+
+#quadAd,
+#rocket,
+#onDemand {
+    flex: 1;
+    margin: 0 auto;
+    padding: 2em;
+}

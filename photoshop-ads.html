@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="resources/css/sitewide.css" rel="stylesheet">
+        <link href="resources/css/showcase.css" rel="stylesheet">
         <title>Photoshop Ads</title>
     </head>
     <body>
@@ -16,16 +18,14 @@
             <li><a href="photoshop-restoration.html">Restoration</a></li>
             <li><a href="photoshop-ads.html">Social Media Ads</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li>Color Theory
+            <li><a href="color-theory-overview.html">Color Theory Overview</a>
                 <ul>
-                    <li><a href="color-theory-overview.html">Color Theory Overview</a></li>
                     <li><a href="color-themes.html">Color Themes</a></li>
                     <li><a href="color-theory-article.html">Color Theory Article</a></li>
                 </ul>
             </li>
-            <li>Typography
+            <li><a href="typography-overview.html">Typography Overview</a>
                 <ul>
-                    <li><a href="typography-overview.html">Typography Overview</a></li>
                     <li><a href="font-types-article.html">Font Types Article</a></li>
                     <li><a href="typography-article.html">Typography Article</a></li>
                 </ul>
@@ -38,17 +38,18 @@
         <p>Ah, yes. The two birds, one stone project.</p>
         <p>My employer is preparing to launch the next iteration of our main software product and, naturally, some marketing material about it would be helpful. The only social media we utilize is LinkedIn, so these images would likely be useful there. But more importantly, they will be pushed onto our website when the time is right. And hopefully customers will take note and prepare accordingly.</p>
         <p>The images used were ones that my employer has purchased from iStock so we already have the rights to use them and it was a bonus I had nice images to use without digging through Unsplash (even though I love you, Unsplash, I'm on a time crunch).</p>
-        <p>The top image is not for any particular release and will likely be pushed on to the website just as some ~~variety~~ whereas the bottom two will be pushed into the carousel or somewhere else as a focal point of LOOK NEW THINGS emphasis. Unlike in the <a href="photoshop-branding.html">Branding Project</a> page, I did not alter the size of the image within the code because it will not change too much and it did not feel necessary to be able to view them all at the same time.</p>
-        <img src="resources/images/photoshop/iss-marketing-image.png" alt="a blue diamond in the middle with ISS' logo on top and four images lining up with each side of the diamond. the top image is of a jet in flight, the right image an illuminated image of data, the bottom image a silhouette of a tank, helicopter, and soldiers, and the left image is a graphic of a laptop with techy bits extending outside the screen and keyboard">
-        <img src="resources/images/photoshop/21-launch.png" alt="a blue background with a hologram-like image of a rocket launching from a hand on the left third with the text 'launching version 2.1' and the SLICwave Life Cycle logo underneath it on the right in white text">
-        <img src="resources/images/photoshop/training.png" alt="various blue shades blocking around an image of hands typing on a laptop on the left. white text overlays the blue on the right saying, 'on demand training. ready when you are.' and underneath the white text is the ISS logo in white">
+        <p>The top image is not for any particular release and will likely be pushed on to the website just as some ~~variety~~ whereas the bottom two will be pushed into the carousel or somewhere else as a focal point of LOOK NEW THINGS emphasis. Unlike in the <a href="photoshop-branding.html">Branding Project</a> page, I did not alter the size of the image within the code because it will not change too much and it did not feel necessary to be able to view them all at the same time. Now, however, with the addition of the CSS stylesheets, I had to resize the two larger images to prevent horizontal scrolling.</p>
+        <div class="ads">
+            <img src="resources/images/photoshop/iss-marketing-image.png" id="quadAd" alt="a blue diamond in the middle with ISS' logo on top and four images lining up with each side of the diamond. the top image is of a jet in flight, the right image an illuminated image of data, the bottom image a silhouette of a tank, helicopter, and soldiers, and the left image is a graphic of a laptop with techy bits extending outside the screen and keyboard">
+            <img src="resources/images/photoshop/21-launch.png" id="rocket" alt="a blue background with a hologram-like image of a rocket launching from a hand on the left third with the text 'launching version 2.1' and the SLICwave Life Cycle logo underneath it on the right in white text">
+            <img src="resources/images/photoshop/training.png" id="onDemand" alt="various blue shades blocking around an image of hands typing on a laptop on the left. white text overlays the blue on the right saying, 'on demand training. ready when you are.' and underneath the white text is the ISS logo in white">
+        </div>
     </main>
     <footer>
-        <p><a href="animate.html">Animate</a></p>
-        <p><a href="photoshop-branding.html">Branding - Photoshop Project</a></p>
-        <p><a href="photoshop-restoration.html">Restoration - Photoshop Project</a></p>
-        <p><a href="photoshop-ads.html">Social Media Ads - Photoshop Project</a></p>
-        <p><a href="resume.html">Resume</a></p>
+        <p><strong>Jane Doe.</strong> Here for the grade.</p>
+        <address>
+            <a href="mailto:souljaboytellem@email.com">souljaboytellem@email.com</a>
+        </address>
     </footer>
     </body>
 </html>
