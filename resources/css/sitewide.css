@@ -1,29 +1,153 @@
 /* basic styles */
+:root {
+    --body-bg: #FAF3E8;
+    --blush-bg: #F5D7C5;
+    --accent-peach: #E88C74;
+    --accent-aqua: #91C5C1;
+    --reg-text: black;
+    --green-txt: #2C4A36;
+    font-size: 1em;
+}
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
     margin: 0;
+    color: var(--reg-text);
+}
+
+/* light and dark themes and font size*/
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.mode-picker > fieldset {
+    border: 0;
+    display: flex;
+    background: var(--blush-bg);
+    padding: 0.5em;
+    gap: 2em;
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: 0.5em;
+}
+
+/* theme specific */
+.mode-picker input[type="radio"] {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+.mode-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+}
+
+.mode-picker input[type="radio"]#light {
+    --radio-color: white;
+}
+
+.mode-picker input[type="radio"]#dark {
+    --radio-color: black;
+}
+
+.dark,
+:root:has(#dark:checked) {
+    --body-bg: #140E1C;
+    --blush-bg: #A1525F;
+    --accent-peach: #462037;
+    --accent-aqua: #C5757C;
+    --reg-text: white;
+    --green-txt: #F9AAAD;
+}
+
+/*font specific */
+
+.font-picker > fieldset {
+    border: 0;
+    display: flex;
+    background: var(--blush-bg);
+    padding: 0.5em;
+    gap: 2em;
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: 0.5em;
+}
+
+.font-picker input[type="radio"]#small {
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+.font-picker input[type="radio"]#regular {
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+.font-picker input[type="radio"]#large {
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+.font-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+}
+
+.small,
+:root:has(#small:checked) {
+    font-size: 0.75em;
+}
+
+.regular,
+:root:has(#regular:checked) {
+    font-size: 1em;
+}
+
+.large,
+:root:has(#large:checked) {
+    font-size: 2em;
 }
 
 /* links */
 
 a {
-    color: #2C4A36;
+    color: var(--green-txt);
 }
 
 a:visited {
-    color: #2C4A36;
+    color: var(--green-txt);
 }
 
 a:active {
-    color:#E88C74;
+    color:var(--accent-aqua);
 }
 
 /* header */
 
 header {
-    background: #F5D7C5;
+    background: var(--blush-bg);
     display: grid;
     grid-template-columns: 6rem 1fr;
     grid-template-rows: 6rem;
@@ -43,7 +167,7 @@ header h1 {
 /* navbar */
 
 header nav {
-    background: #E88C74;
+    background: var(--accent-peach);
     grid-column: 1 / -1;
 }
 
@@ -58,13 +182,21 @@ header nav ul {
 header nav ul li {
     flex: 1;
     font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--green-txt);
     height: 2.3rem;
     z-index: 10;
 }
 
+.top {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+header nav ul li ul li,
 header nav ul li a,
 header nav ul li a:visited {
-    background: #E88C74;
+    background: var(--accent-peach);
     display: block;
     padding: 0.5rem;
     text-align: center;
@@ -72,12 +204,13 @@ header nav ul li a:visited {
     white-space: nowrap;
 }
 
+header nav ul li,
 header nav ul li a:hover {
-    background: #E88C74;
+    background: var(--accent-peach);
 }
 
 header nav ul li a:active {
-    background: #E88C74;
+    background: var(--accent-peach);
 }
 
 header nav ul li>ul {
@@ -96,7 +229,7 @@ header nav ul li:hover>ul {
 /* main */
 
 main {
-    background: #FAF3E8;
+    background: var(--body-bg);
     margin: auto;
     padding-bottom: 3em;
 }
@@ -115,18 +248,76 @@ main h5 {
     padding: 1em;
 }
 
+main th {
+    color: black;
+}
+
+#resume h2 {
+    font-size: 2em;
+}
+
+#resume h4 {
+    font-size: 1.75em;
+    display: inline;
+}
+
 main>p {
     padding-left: 1em;
     padding-right: 1em;
     margin: 1em;
 }
 
+#resumeDropdown {
+    background-color: var(--blush-bg);
+    margin: auto;
+    padding: 2em;
+    max-width: 800px;
+}
+
+#resume #resumeDropdown>div {
+    display: block;
+    margin: auto;
+}
+
+.topic {
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.arrow {
+    float: right;
+    width: 2em;
+    height: 2em;
+}
+
+/* icons for dropdown in resume */
+
+.arrow-up {
+    background-image: url("../images/javascript/arrow_up2.svg");
+    background-size: 32px 32px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    cursor: grab;
+}
+
+.arrow-down {
+    background-image: url("../images/javascript/arrow_down2.svg");
+    background-size: 32px 32px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: local;
+}
+
 /* footer */
 
 footer {
-    background: #E88C74;
+    background: var(--accent-peach);
     bottom: 0;
-    color: #2C4A36;
+    color: var(--green-txt);
     display: flex;
     font-size: smaller;
     padding: 0.5rem;
@@ -148,7 +339,7 @@ footer address {
 
 footer address a,
 footer address a:visited {
-    color:#2C4A36;
+    color:var(--green-txt);
     opacity: 0.5;
     padding: 0.3rem;
     text-decoration: none;
@@ -156,7 +347,7 @@ footer address a:visited {
 
 footer a, 
 footer a:visited {
-    color: #2C4A36;
+    color: var(--green-txt);
     padding: 0.3em;
     text-decoration: none;
 }

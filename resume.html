@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="resources/css/sitewide.css" rel="stylesheet">
+        <script src="resources/js/interactivity.js"></script>
         <title>Resume</title>
         <style>
             main.resume {
@@ -17,81 +18,144 @@
         <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="animate.html">Animate</a></li>
-            <li><a href="photoshop-branding.html">Branding</a></li>
-            <li><a href="photoshop-restoration.html">Restoration</a></li>
-            <li><a href="photoshop-ads.html">Social Media Ads</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="color-theory-overview.html">Color Theory Overview</a>
+            <li class="top">Showcase &#9660;
                 <ul>
+                    <li><a href="animate.html">Animate</a></li>
+                    <li><a href="photoshop-branding.html">Branding</a></li>
+                    <li><a href="photoshop-restoration.html">Restoration</a></li>
+                    <li><a href="photoshop-ads.html">Social Media Ads</a></li>
+                </ul>
+            </li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="top">Color Theory &#9660;
+                <ul>
+                    <li><a href="color-theory-overview.html">Color Theory Overview</a></li>
                     <li><a href="color-themes.html">Color Themes</a></li>
                     <li><a href="color-theory-article.html">Color Theory Article</a></li>
                 </ul>
             </li>
-            <li><a href="typography-overview.html">Typography Overview</a>
+            <li class="top">Typography &#9660;
                 <ul>
+                    <li><a href="typography-overview.html">Typography Overview</a></li>
                     <li><a href="font-types-article.html">Font Types Article</a></li>
                     <li><a href="typography-article.html">Typography Article</a></li>
+                </ul>
+            </li>
+            <li class="top">Mode &#9660;
+                <ul>
+                    <li>
+                        <form class="mode-picker">
+                            <fieldset>
+                                <legend class="visually-hidden">Pick a color scheme</legend>
+                                <label for="light" class="visually-hidden">Light</label>
+                                <input type="radio" name="theme" id="light" checked>
+
+                                <label for="dark" class="visually-hidden">Dark</label>
+                                <input type="radio" name="theme" id="dark">
+                            </fieldset>
+                        </form>
+                    </li>
+                </ul>
+            </li>
+            <li class="top">Font Size &#9660;
+                <ul>
+                    <li>
+                        <form class="font-picker">
+                            <fieldset>
+                                <legend class="visually-hidden">Pick a color scheme</legend>
+                                <label for="small" class="visually-hidden">Small</label>
+                                <input type="radio" name="theme" id="small" checked>
+
+                                <label for="regular" class="visually-hidden">Regular</label>
+                                <input type="radio" name="theme" id="regular">
+
+                                <label for="large" class="visually-hidden">Large</label>
+                                <input type="radio" name="theme" id="large">
+                            </fieldset>
+                        </form>
+                    </li>
                 </ul>
             </li>
         </ul>
         </nav>
     </header>
-    <main class="resume">
-        <h2>Jane Doe</h2>
-        <p>Really bad at catchy bios</p>
-        <p>(678) 999-8212 | souljaboytellem@email.com | Not Beverly Hills, CA</p>
-        <br>
-        <h3>Summary</h3>
-        <p>Creative and detail-oriented with 3+ years of experience in maintaining and growing my employer's website. (If you're creeping on it and it's bad, don't tell me).</p>
-        <h3>Skills</h3>
-        <ul>
-            <li><strong>Design:</strong> Adobe Photoshop, InDesign, Illustrator, and Animate (please don't make me use Animate).</li>
-            <li><strong>Web Development:</strong> HTML5, CSS, Bootstrap, JavaScript</li>
-        </ul>
-        <h4 id="education">Education</h4>
-        <ul>
-            <li>East High Wildcats - Class of 2008</li>
-            <li>Hard Knocks University
-                <ul>
-                    <li>Bachelor of Arts in Design</li>
-                    <li>Minor in Panic Attacks</li>
-                    <li><i>Graduated: 2012</i></li>
+    <main id="resume">
+        <div id="resumeDropdown">
+            <h2>Jane Doe</h2>
+            <p>Really bad at catchy bios</p>
+            <p>(678) 999-8212 | souljaboytellem@email.com | Not Beverly Hills, CA</p>
+            <br>
+            <div>
+                <h4 class="topic">Summary 
+                    <span class="arrow-down arrow"></span>
+                </h4>
+                <p class="content">Creative and detail-oriented with 3+ years of experience in maintaining and growing my employer's website. (If you're creeping on it and it's bad, don't tell me).</p>
+            </div>
+            <div>
+                <h4 class="topic">Skills 
+                    <span class="arrow-down arrow"></span>
+                </h4>
+                <ul class="content">
+                    <li><strong>Design:</strong> Adobe Photoshop, InDesign, Illustrator, and Animate (please don't make me use Animate).</li>
+                    <li><strong>Web Development:</strong> HTML5, CSS, Bootstrap, JavaScript</li>
                 </ul>
-            </li>
-        </ul>
-        <h4 id="workHistory">Work Experience</h4>
-        <ul>
-            <li><strong>UI/UX Designer</strong><br>September 2019 - current
-                <ul>
-                    <li>Designed user interfaces for multiple mobile and web applications.</li>
-                    <li>Conducted user research and usability testing to gather feedback and inform design decisions</li>
-                    <li>Created and maintained a design system library, improving consistency and reducing design time.</li>
+            </div>
+            <div>
+                <h4 id="education" class="topic">Education 
+                    <span class="arrow-down arrow"></span>
+                </h4>
+                <ul class="content">
+                    <li>East High Wildcats - Class of 2008</li>
+                    <li>Hard Knocks University
+                        <ul>
+                            <li>Bachelor of Arts in Design</li>
+                            <li>Minor in Panic Attacks</li>
+                            <li><i>Graduated: 2012</i></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li><strong>Magical In-Between Years of Mystery</strong><br>August 2014 - September 2019</li>
-            <li><strong>Graphic Designer (Internship)</strong><br>January 2014 - August 2014
-                <ul>
-                    <li>Assisted senior designers in creating visual assets for client websites, social media campaigns, and print materials.</li>
-                    <li>Gained hands-on experience with Adobe Photoshop and Illustrator.</li>
-                    <li>Collaborated on team projects and contributed to brainstorming sessions for client branding initiatives.</li>
+            </div>
+            <div>
+                <h4 id="workHistory" class="topic">Work Experience 
+                    <span class="arrow-down arrow"></span>
+                </h4>
+                <ul class="content">
+                    <li><strong>UI/UX Designer</strong><br>September 2019 - current
+                        <ul>
+                            <li>Designed user interfaces for multiple mobile and web applications.</li>
+                            <li>Conducted user research and usability testing to gather feedback and inform design decisions</li>
+                            <li>Created and maintained a design system library, improving consistency and reducing design time.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Magical In-Between Years of Mystery</strong><br>August 2014 - September 2019</li>
+                    <li><strong>Graphic Designer (Internship)</strong><br>January 2014 - August 2014
+                        <ul>
+                            <li>Assisted senior designers in creating visual assets for client websites, social media campaigns, and print materials.</li>
+                            <li>Gained hands-on experience with Adobe Photoshop and Illustrator.</li>
+                            <li>Collaborated on team projects and contributed to brainstorming sessions for client branding initiatives.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Professional Job Hunter</strong><br>June 2012 - January 2014
+                        <ul>
+                            <li>Recession bounce back issues, ya feel?</li>
+                            <li>Listened to a lot of Ke$ha</li>
+                            <li>Please be laughing at this content</li>
+                        </ul>
+                    </li>
+                    <p>(Full disclosure, I have no idea about 90% of this content. I asked AI to help me create a mock resume since I'm not putting my real information on here.)<br>(But I will claim the "Professional Job Hunter" as my own brain power.)<br>(I'm totally taking this so seriously.)</p>
                 </ul>
-            </li>
-            <li><strong>Professional Job Hunter</strong><br>June 2012 - January 2014
-                <ul>
-                    <li>Recession bounce back issues, ya feel?</li>
-                    <li>Listened to a lot of Ke$ha</li>
-                    <li>Please be laughing at this content</li>
+            </div>
+            <div>
+                <h4 id="references" class="topic">References 
+                    <span class="arrow-down arrow"></span>
+                </h4>
+                <ul class="content">
+                    <li><strong>Patrick Starr</strong> | Is this the Krusty Krab? | (555) 555-555</li>
+                    <li><strong>Snoop Dog</strong> | Jane Doe's legit, man. | (777) 777-7777</li>
+                    <li><strong>Taylor Swift</strong> | "I was enchanted to meet you." | (131) 313-1313</li>
                 </ul>
-            </li>
-        </ul>
-        <p>(Full disclosure, I have no idea about 90% of this content. I asked AI to help me create a mock resume since I'm not putting my real information on here.)<br>(But I will claim the "Professional Job Hunter" as my own brain power.)<br>(I'm totally taking this so seriously.)</p>
-        <h4 id="references">References</h4>
-        <ul>
-            <li><strong>Patrick Starr</strong> | Is this the Krusty Krab? | (555) 555-555</li>
-            <li><strong>Snoop Dog</strong> | Jane Doe's legit, man. | (777) 777-7777</li>
-            <li><strong>Taylor Swift</strong> | "I was enchanted to meet you." | (131) 313-1313</li>
-        </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <p><strong>Jane Doe.</strong> Here for the grade.</p>
@@ -99,5 +163,8 @@
             <a href="mailto:souljaboytellem@email.com">souljaboytellem@email.com</a>
         </address>
     </footer>
+
+    <script src="resources/js/sitewide.js"></script>
+
     </body>
 </html>
