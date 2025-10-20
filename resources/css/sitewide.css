@@ -118,16 +118,19 @@ body {
 .small,
 :root:has(#small:checked) {
     font-size: 0.75em;
+    radio-color: white;
 }
 
 .regular,
 :root:has(#regular:checked) {
     font-size: 1em;
+    radio-color: white;
 }
 
 .large,
 :root:has(#large:checked) {
     font-size: 2em;
+    radio-color: white;
 }
 
 /* links */
